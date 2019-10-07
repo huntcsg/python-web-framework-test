@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+docker build -f images/flask/Dockerfile -t web-framework-test:flask .
+docker build -f images/pyramid/Dockerfile -t web-framework-test:pyramid .
+docker build -f images/tornado/Dockerfile -t web-framework-test:tornado .
+docker build -f images/locust/Dockerfile -t web-framework-test:locust .

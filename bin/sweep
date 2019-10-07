@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+#./bin/locust --csv /files/$1-10-$3-$2 --no-web -t $2 -c 10 -r 5 --host http://67.205.130.165:6543 --reset-stats --print-stats -f performance-tests/$3.py
+#./bin/locust --csv /files/$1-50-$3-$2 --no-web -t $2 -c 50 -r 5 --host http://67.205.130.165:6543 --reset-stats --print-stats -f performance-tests/$3.py
+./bin/locust --csv /files/$1-100-$3-$2 --no-web -t $2 -c 100 -r 5 --host http://67.205.130.165:6543 --reset-stats --print-stats -f performance-tests/$3.py
+./bin/locust --csv /files/$1-150-$3-$2 --no-web -t $2 -c 150 -r 5 --host http://67.205.130.165:6543 --reset-stats --print-stats -f performance-tests/$3.py
+./bin/locust --csv /files/$1-200-$3-$2 --no-web -t $2 -c 200 -r 5 --host http://67.205.130.165:6543 --reset-stats --print-stats -f performance-tests/$3.py
+./bin/locust --csv /files/$1-300-$3-$2 --no-web -t $2 -c 300 -r 5 --host http://67.205.130.165:6543 --reset-stats --print-stats -f performance-tests/$3.py
+./bin/locust --csv /files/$1-400-$3-$2 --no-web -t $2 -c 400 -r 5 --host http://67.205.130.165:6543 --reset-stats --print-stats -f performance-tests/$3.py
