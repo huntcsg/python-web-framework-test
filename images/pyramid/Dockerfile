@@ -15,7 +15,7 @@ RUN pip install --upgrade pip
 
 WORKDIR /opt/web-framework-test
 
-COPY deps ./deps
+COPY deps/pyramid.in ./deps/pyramid.in
 
 RUN python -m venv /opt/venvs/pyramid \
     && /opt/venvs/pyramid/bin/pip install -r deps/pyramid.in

@@ -24,6 +24,10 @@ setup(
         ],
         'locust': [
             'locust',
-        ]
+        ],
+        "quart": [
+            "quart",
+            "hypercorn"
+        ],
     }
 )
