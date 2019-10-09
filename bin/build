@@ -6,3 +6,5 @@ docker build -f images/tornado/Dockerfile -t web-framework-test:tornado .
 docker build -f images/locust/Dockerfile -t web-framework-test:locust .
 docker build -f images/quart/Dockerfile -t web-framework-test:quart .
 docker build -f images/flask-pypy/Dockerfile -t web-framework-test:flask-pypy .
+docker build -f images/pyramid-pypy/Dockerfile -t web-framework-test:pyramid-pypy .
+docker build -f images/tornado-pypy/Dockerfile -t web-framework-test:tornado-pypy .
