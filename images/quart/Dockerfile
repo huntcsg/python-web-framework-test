@@ -15,11 +15,11 @@ RUN pip install --upgrade pip
 
 WORKDIR /opt/web-framework-test
 
-COPY deps/locust.in ./deps/locust.in
+COPY deps/quart.in ./deps/quart.in
 
-RUN python -m venv /opt/venvs/locust \
-    && /opt/venvs/locust/bin/pip install -r deps/locust.in
+RUN python -m venv /opt/venvs/quart \
+    && /opt/venvs/quart/bin/pip install -r deps/quart.in
 
 COPY . ./
 
-RUN /opt/venvs/locust/bin/pip install -e .[locust]
+RUN /opt/venvs/quart/bin/pip install -e .[quart]

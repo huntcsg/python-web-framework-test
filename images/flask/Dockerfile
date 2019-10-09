@@ -15,7 +15,7 @@ RUN pip install --upgrade pip
 
 WORKDIR /opt/web-framework-test
 
-COPY deps ./deps
+COPY deps/flask.in ./deps/flask.in
 
 RUN python -m venv /opt/venvs/flask \
     && /opt/venvs/flask/bin/pip install -r deps/flask.in
